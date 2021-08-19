@@ -4,12 +4,7 @@ nav {
     background-color: white;
 
     li {
-        transition: 0.3s;
-        padding: 1.8rem 1.6rem 1.8rem 1.6rem;
-
-        &:hover {
-            background: #02676d;
-        }
+        padding-left: 1.6rem;
     }
 }
 
@@ -29,9 +24,11 @@ nav {
     text-transform: uppercase;
     color: #02676d;
     transition: 0.3s;
+    padding: 2.3rem;
 
     &:hover {
         color: #ffff;
+        background: #02676d;
     }
 }
 

@@ -50,10 +50,28 @@
 
 .asesoria {
     margin: 8rem 0 5rem 0;
+    width: 50%;
+    height: 100%;
+}
+@media (min-width: 360px) and (max-width: 540px){
+    .asesoria{
+        width: 100%;
+    }
 }
 
 .asesoria-box {
     padding-bottom: 4rem;
+    width: 100%;
+    height: 100%;
+}
+
+#asesoria-left{
+    margin-left: 30rem;
+}
+@media (min-width: 360px) and (max-width: 540px){
+    #asesoria-left{
+        margin-left: 0;
+    }
 }
 
 .boxes {
