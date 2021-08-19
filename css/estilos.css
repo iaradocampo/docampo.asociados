@@ -49,8 +49,8 @@ nav li {
   width: 100%;
   height: 100%;
   position: absolute;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 12, 12, 0.6)), to(rgba(12, 12, 12, 0.6)));
-  background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6));
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(12, 12, 12, 0.7)), to(rgba(12, 12, 12, 0.7)));
+  background: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7));
 }
 
 #hero {
@@ -64,7 +64,7 @@ nav li {
 
 #hero:before {
   content: "";
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.8);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -81,15 +81,24 @@ nav li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .hero-texto {
   width: 100%;
-  text-align: center;
   margin: auto;
+}
+
+#hero-texto {
+  width: 100%;
+  margin: auto;
+  padding-left: 20rem;
+  padding-top: 8rem;
 }
 
 .asesoria {
@@ -105,7 +114,7 @@ nav li {
 }
 
 .asesoria-box {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
   width: 100%;
   height: 100%;
 }
@@ -197,6 +206,20 @@ nav li {
   padding: 12rem;
 }
 
+.icon-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+}
+
 .img-banner {
   width: 100%;
   min-height: 500px;
@@ -244,6 +267,17 @@ h2 {
   letter-spacing: 2px;
   font-family: 'Merriweather', serif;
   text-transform: uppercase;
+  text-align: center;
+  font-weight: 500;
+}
+
+.sub {
+  font-size: 2em;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .p-center {
@@ -259,12 +293,44 @@ h2 {
 
 .a {
   font-size: 1.2em;
-  color: #02676d;
+  color: #000;
+  position: relative;
 }
 
 .a:hover {
   text-decoration: none;
   color: #02676d;
+}
+
+.a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  margin: -5px 0;
+  background-color: #02676d;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.a-contact {
+  font-weight: 400;
+  color: #fff;
+}
+
+.a-contact:hover {
+  text-decoration: none;
+  color: grey;
 }
 
 .a-list {
@@ -290,6 +356,7 @@ h2 {
   font-size: 1.6em;
   font-family: 'Merriweather', serif;
   font-weight: 600;
+  text-align: center;
 }
 
 .p-box {
@@ -310,9 +377,29 @@ h2 {
   letter-spacing: 1px;
 }
 
+.p-hero-left {
+  font-size: 3em;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  text-align: left;
+  font-weight: 500;
+}
+
+.sub-hero {
+  font-size: 2em;
+  color: white;
+  letter-spacing: 2px;
+  font-family: 'Merriweather', serif;
+  text-transform: uppercase;
+  text-align: left;
+}
+
 .gtco-testimonials {
   position: relative;
-  margin: 5rem 0 7rem 0;
+  margin: 8rem 0 7rem 0;
+  margin-bottom: 10rem;
 }
 
 .gtco-testimonials .owl-stage-outer {
@@ -352,8 +439,8 @@ h2 {
 }
 
 .gtco-testimonials .card {
-  -webkit-box-shadow: 7px 8px 30px -7px #99f2f7;
-          box-shadow: 7px 8px 30px -7px #99f2f7;
+  -webkit-box-shadow: 7px 8px 30px -7px #02686d6b;
+          box-shadow: 7px 8px 30px -7px #02686d6b;
   margin: 0 1.2rem;
   padding: 0 0.6rem;
   border-radius: 1.2rem;
@@ -585,16 +672,35 @@ textarea.input100 {
   background: #333333;
 }
 
-.bi-award {
-  font-size: 2rem;
-  display: block;
-  text-align: center;
-  padding-top: 1rem;
+.fa {
+  font-size: 2rem !important;
 }
 
 .bi-geo-alt, .bi-telephone, .bi-envelope {
   color: white;
   font-size: 1.6em;
+}
+
+.fas {
+  width: 100px;
+  height: 100px;
+  padding: 1.6rem 0;
+  text-align: center;
+  font-size: 3em;
+  color: #ecebeb;
+  background: #02676d;
+  border-radius: 100%;
+}
+
+.i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 }
 
 footer {
@@ -620,9 +726,27 @@ span {
 }
 
 .bi-instagram {
-  display: block;
   font-size: 1.6em;
-  text-align: center;
   padding-bottom: 1rem;
+  color: #000;
+}
+
+.bi-instagram:hover {
+  color: #02676d;
+}
+
+.a-footer {
+  text-align: center;
+  font-weight: 400;
+  color: #000;
+}
+
+.a-footer:hover {
+  text-decoration: none;
+  color: #02676d;
+}
+
+.list-inline {
+  text-align: center;
 }
 /*# sourceMappingURL=estilos.css.map */

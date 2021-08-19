@@ -8,7 +8,7 @@
         width: 100%;
         height: 100%;
         position: absolute;
-        background: linear-gradient(rgba(12, 12, 12, 0.6), rgba(12, 12, 12, 0.6));
+        background: linear-gradient(rgba(12, 12, 12, 0.7), rgba(12, 12, 12, 0.7));
     }
 }
 
@@ -22,7 +22,7 @@
 
     &:before {
         content: "";
-        background: rgba(0, 0, 0, 0.7);
+        background: rgba(0, 0, 0, 0.8);
         position: absolute;
         bottom: 0;
         top: 0;
@@ -38,38 +38,46 @@
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-texto {
     width: 100%;
-    text-align: center;
     margin: auto;
 }
 
+#hero-texto {
+    width: 100%;
+    margin: auto;
+    padding-left: 20rem;
+    padding-top: 8rem;
+}
 
 .asesoria {
     margin: 8rem 0 5rem 0;
     width: 50%;
     height: 100%;
 }
-@media (min-width: 360px) and (max-width: 540px){
-    .asesoria{
+
+@media (min-width: 360px) and (max-width: 540px) {
+    .asesoria {
         width: 100%;
     }
 }
 
 .asesoria-box {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     width: 100%;
     height: 100%;
 }
 
-#asesoria-left{
+#asesoria-left {
     margin-left: 30rem;
 }
-@media (min-width: 360px) and (max-width: 540px){
-    #asesoria-left{
+
+@media (min-width: 360px) and (max-width: 540px) {
+    #asesoria-left {
         margin-left: 0;
     }
 }
@@ -143,4 +151,12 @@
 
 .box-contacto {
     padding: 12rem;
+}
+
+.icon-2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
 }

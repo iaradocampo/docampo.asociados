@@ -15,14 +15,32 @@ span {
     font-weight: 600;
 }
 
-.border-top{
+.border-top {
     border-top: 1px solid gray !important;
     padding-top: 2rem;
 }
 
 .bi-instagram {
-    display: block;
     font-size: 1.6em;
-    text-align: center;
     padding-bottom: 1rem;
+    color: #000;
+
+    &:hover {
+        color: #02676d;
+    }
+}
+
+.a-footer {
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+
+    &:hover {
+        text-decoration: none;
+        color: #02676d;
+    }
+}
+
+.list-inline {
+    text-align: center;
 }

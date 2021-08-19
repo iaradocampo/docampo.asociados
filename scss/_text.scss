@@ -36,6 +36,17 @@ h2 {
     letter-spacing: 2px;
     font-family: 'Merriweather', serif;
     text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+}
+
+.sub {
+    font-size: 2em;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 .p-center {
@@ -51,11 +62,40 @@ h2 {
 
 .a {
     font-size: 1.2em;
-    color: #02676d;
+    color: #000;
+    position: relative;
 
     &:hover {
         text-decoration: none;
         color: #02676d;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0px;
+        margin: -5px 0;
+        background-color: #02676d;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
+    }
+
+    &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+.a-contact {
+    font-weight: 400;
+    color: #fff;
+
+    &:hover {
+        text-decoration: none;
+        color: grey;
     }
 }
 
@@ -82,6 +122,7 @@ h2 {
     font-size: 1.6em;
     font-family: 'Merriweather', serif;
     font-weight: 600;
+    text-align: center;
 }
 
 .p-box {
@@ -100,4 +141,23 @@ h2 {
     color: white;
     font-size: 1.1em;
     letter-spacing: 1px;
+}
+
+.p-hero-left {
+    font-size: 3em;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    text-align: left;
+    font-weight: 500;
+}
+
+.sub-hero {
+    font-size: 2em;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+    text-align: left;
 }

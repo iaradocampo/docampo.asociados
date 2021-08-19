@@ -1,11 +1,26 @@
-.bi-award {
-    font-size: 2rem;
-    display: block;
-    text-align: center;
-    padding-top: 1rem;
+.fa {
+    font-size: 2rem !important;
 }
 
 .bi-geo-alt, .bi-telephone, .bi-envelope{
     color: white;
     font-size: 1.6em;
+}
+
+.fas{
+    width: 100px;
+    height: 100px;
+    padding: 1.6rem 0;
+    text-align: center;
+    font-size: 3em;
+    color: #ecebeb;
+    background: #02676d;
+    border-radius: 100%;
+}
+
+.i{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }

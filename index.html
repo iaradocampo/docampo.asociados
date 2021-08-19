@@ -53,9 +53,9 @@
     </header>
     <section id="hero">
         <div class="hero-box">
-            <div class="hero-texto">
-                <p class="p-hero">docampo & asociados</p>
-                <p class="p-hero">asesoramiento juridico</p>
+            <div id="hero-texto">
+                <p class="p-hero-left">docampo & asociados</p>
+                <p class="sub-hero">asesoramiento juridico</p>
             </div>
         </div>
     </section>
@@ -74,7 +74,7 @@
                 nulla ex, pariatur, voluptates molestiae earum asperiores, quidem eligendi cumque incidunt nisi
                 temporibus
                 facilis maxime quis vel nobis culpa eius commodi provident.</p>
-            <p class="p"><a href="nosotros.html" class="a">Más información</a></p>
+            <p style="text-align: center;"><a href="nosotros.html" class="a">Más información >></a></p>
         </div>
     </main>
     <section>
@@ -86,7 +86,9 @@
             <div class="row boxes">
                 <div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
                     <div class="servicios-box">
-                        <i class="bi bi-award"></i>
+                        <div class="i">
+                        <i class="fa fa-university"></i>
+                    </div>
                         <p class="p-title">Daños y perjuicios</p>
                         <p class="p-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
                             ullam
@@ -96,7 +98,9 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1500">
                     <div class="servicios-box">
-                        <i class="bi bi-award"></i>
+                        <div class="i">
+                        <i class="fa fa-users"></i>
+                    </div>
                         <p class="p-title">Derecho de familia</p>
                         <p class="p-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
                             ullam
@@ -106,7 +110,9 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
                     <div class="servicios-box">
-                        <i class="bi bi-award"></i>
+                        <div class="i">
+                        <i class="fa fa-suitcase"></i>
+                    </div>
                         <p class="p-title">Derecho laboral</p>
                         <p class="p-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
                             ullam
@@ -116,7 +122,9 @@
                 </div>
                 <div class="col-lg-6" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1500">
                     <div class="servicios-box">
-                        <i class="bi bi-award"></i>
+                        <div class="i">
+                        <i class="fa fa-gavel"></i>
+                    </div>
                         <p class="p-title">Derecho previsional</p>
                         <p class="p-box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
                             ullam
@@ -171,15 +179,23 @@
     </section>
     <footer class="col-lg-12 col-md-12 col-sm-12">
         <div class="container">
-            <p class="p-center"><span>Buenos Aires:</span> Av. Corrientes 5513, CABA. | <span>Tel:</span> +54 011 1111
-                1111</p>
-            <p class="p-center">estudio@docampo-asociados.com</p>
+            <p class="p-center"><span>Buenos Aires:</span><a
+                    href="https://www.google.com/maps/place/Av.+Corrientes+5513,+Buenos+Aires/@-34.5969947,-58.4438632,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcca0ae0da9671:0x8112aba2ea671359!8m2!3d-34.5969947!4d-58.4416745"
+                    class="a-footer">
+                    Av. Corrientes 5513, CABA.</a> | <span>Tel:</span> <a href="tel:+5401111111111" class="a-footer">+54
+                    011 1111 1111</a></p>
+            <p class="p-center"><a href="mailto:estudio@docampo-asociados.com"
+                    class="a-footer">estudio@docampo-asociados.com</a></p>
             <div class="border-top">
-                <i class="bi bi-instagram"></i>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="https://www.instagram.com/docampo.asociados/"
+                            class="a-icon"><i class="bi bi-instagram"></i></a></li>
+                </ul>
                 <small>Docampo & Asociados © 2021. Todos los derechos reservados.</small>
             </div>
         </div>
     </footer>
+    <script src="https://use.fontawesome.com/c12c393660.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
