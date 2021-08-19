@@ -1,0 +1,41 @@
+nav {
+    min-height: 100px;
+    top: 0;
+    background-color: white;
+
+    li {
+        transition: 0.3s;
+        padding: 1.8rem 1.6rem 1.8rem 1.6rem;
+
+        &:hover {
+            background: #02676d;
+        }
+    }
+}
+
+.navbar {
+    padding: 0;
+}
+
+.logo {
+    min-width: 140px;
+    max-width: 160px;
+}
+
+.nav-link {
+    font-size: 1.2em;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #02676d;
+    transition: 0.3s;
+
+    &:hover {
+        color: #ffff;
+    }
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+}

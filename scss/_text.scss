@@ -1,0 +1,103 @@
+body {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #02676d;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding: 4rem 0 2rem 0;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+    color: #02676d;
+    position: relative;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+}
+
+.title {
+    position: absolute;
+    color: #f4f4f4;
+    left: 0;
+    right: 0;
+    font-weight: 700;
+    font-size: 3.5em;
+    line-height: 0;
+    font-family: 'Merriweather', serif;
+}
+
+.p-hero {
+    font-size: 3em;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Merriweather', serif;
+    text-transform: uppercase;
+}
+
+.p-center {
+    font-size: 1.2em;
+    text-align: center;
+    font-weight: 400;
+}
+
+.p-left {
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.a {
+    font-size: 1.2em;
+    color: #02676d;
+
+    &:hover {
+        text-decoration: none;
+        color: #02676d;
+    }
+}
+
+.a-list {
+    display: block;
+    font-size: 1.6em;
+    color: black;
+    margin-top: 2rem;
+
+    &:hover {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.p-title {
+    font-size: 1.6em;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 1.6em;
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+}
+
+.p-box {
+    font-size: 1.1em;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.title-contacto {
+    color: white;
+    font-size: 1.3em;
+    letter-spacing: 2px;
+}
+
+.p-contacto {
+    color: white;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
