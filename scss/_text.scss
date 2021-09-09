@@ -19,6 +19,12 @@ h2 {
     text-align: center;
 }
 
+@media (min-width: 280px) and (max-width: 320px){
+    h2{
+        font-size: 1.5em;
+    }
+}
+
 .title {
     position: absolute;
     color: #f4f4f4;
@@ -28,6 +34,18 @@ h2 {
     font-size: 3.5em;
     line-height: 0;
     font-family: 'Merriweather', serif;
+}
+
+@media (min-width: 280px) and (max-width: 320px){
+    .title{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 767px){
+    .title{
+        font-size: 2em;
+    }
 }
 
 .p-hero {
@@ -61,7 +79,7 @@ h2 {
 }
 
 .a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #000;
     position: relative;
 
@@ -116,6 +134,15 @@ h2 {
     font-family: 'Merriweather', serif;
     font-weight: 600;
     text-align: center;
+}
+
+.p-a{
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    text-align: center;
+    &:hover{
+        color: white;
+    }
 }
 
 .titulo {
