@@ -318,6 +318,11 @@ hr {
   border: 1px solid #02676d;
 }
 
+/* container text contacto */
+.text-contacto {
+  padding: 0 1rem;
+}
+
 body {
   font-family: 'Hind Siliguri', sans-serif;
 }
@@ -328,15 +333,6 @@ h1 {
   font-family: 'Merriweather', serif;
   text-align: center;
   padding: 4rem 0 2rem 0;
-}
-
-.h1 {
-  font-size: 2.5em;
-  font-weight: 700;
-  color: #02676d;
-  font-family: 'Merriweather', serif;
-  text-align: center;
-  padding: 4rem 1rem;
 }
 
 h2 {
@@ -671,30 +667,6 @@ form {
   }
 }
 
-form {
-  width: 50rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 3.5rem 3.4rem 3.9rem 3.4rem;
-  margin: auto;
-  margin-bottom: 6rem;
-}
-
-@media (max-width: 992px) {
-  form {
-    width: 60%;
-  }
-}
-
-@media (max-width: 768px) {
-  form {
-    width: 100%;
-  }
-}
-
 input {
   outline: none;
   border: none;
@@ -851,19 +823,6 @@ label {
 
 .disabled-button {
   background: #333333;
-}
-
-.btn-form {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 23px;
 }
 
 .fa {
