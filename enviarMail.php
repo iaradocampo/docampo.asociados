@@ -1,15 +1,17 @@
 <?php
-echo getcwd();
-
-ini_set('display_errors', 1);
 
 $nombre = $_POST["nombre"];
+$nombre = $_POST["apellido"];
 $correo = $_POST["correo"];
 $telefono = $_POST["telefono"];
 $mensaje = $_POST["mensaje"];
 
-$body = "Nombre: " .$nombre . "<br>Correo " . $correo . "<br>Telefono:" . $telefono ."<br>Mensaje: " . $mensaje;
-
+$body = '<h1>Contato via WebPage</h1>'.
+'<p><b>Nombre Completo:</b> '.$nombre.'</p>'.
+'<p><b>Email:</b> '.$correo.'</p>'.
+'<p><b>Telefono:</b> '.$telefono.'</p>'.
+'<p><b>Consulta:</b></p>'.
+'<p>'.$mensaje.'</p>';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -29,19 +31,20 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = '**********';                     //SMTP username
+    $mail->Username   = '*****************';                     //SMTP username
     $mail->Password   = '**********';                               //SMTP password
-    $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
+    $mail->Port       = 465;                                     //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom('menendezbruno@gmail.com', 'maradoo0');
-    $mail->addAddress('menendezbruno@gmail.com', 'Joe User');     //Add a recipient
+    $mail->setFrom('', 'Formulario de Contacto WebSite');
+    $mail->addAddress('', 'Docampo-Abogados');     //Add a recipient
     
     //Content
     $mail->isHTML(true);    
     $mail->Charset = 'UTF-8';                              //Set email format to HTML
-    $mail->Subject = 'Here is the subject';
-    $mail->Body    = 'Here is the body';
+    $mail->Subject = 'Email enviado desde Docampo&Abogados WebPage';
+    $mail->Body    = $body;
 
     $mail->send();
     echo '<script>

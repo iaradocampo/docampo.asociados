@@ -10,6 +10,15 @@ h1 {
     padding: 4rem 0 2rem 0;
 }
 
+.h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #02676d;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
 h2 {
     font-size: 2em;
     font-weight: 700;
@@ -17,6 +26,12 @@ h2 {
     position: relative;
     font-family: 'Merriweather', serif;
     text-align: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    h2 {
+        font-size: 1.5em;
+    }
 }
 
 .title {
@@ -30,6 +45,18 @@ h2 {
     font-family: 'Merriweather', serif;
 }
 
+@media (min-width: 280px) and (max-width: 320px) {
+    .title {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 280px) and (max-width: 767px) {
+    .title {
+        font-size: 2em;
+    }
+}
+
 .p-hero {
     font-size: 3em;
     color: white;
@@ -39,6 +66,13 @@ h2 {
     text-align: center;
     font-weight: 500;
 }
+
+@media (min-width: 280px) and (max-width: 375px) {
+    .p-hero {
+        font-size: 2.5em;
+    }
+}
+
 
 .sub {
     font-size: 2em;
@@ -61,7 +95,7 @@ h2 {
 }
 
 .a {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #000;
     position: relative;
 
@@ -118,6 +152,21 @@ h2 {
     text-align: center;
 }
 
+.p-a {
+    font-family: 'Merriweather', serif;
+    font-weight: 600;
+    color: white;
+
+    &:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+.a-link {
+    text-align: center;
+}
+
 .titulo {
     font-size: 1.6em;
     font-family: 'Merriweather', serif;
@@ -128,7 +177,7 @@ h2 {
 .p-box {
     font-size: 1.1em;
     text-align: center;
-    padding-top: 1rem;
+    padding: 1rem 1rem 0 1rem;
 }
 
 .title-contacto {
@@ -153,6 +202,13 @@ h2 {
     font-weight: 500;
 }
 
+@media (min-width: 320px) and (max-width: 768px) {
+    .p-hero-left {
+        font-size: 2.5em;
+        text-align: center;
+    }
+}
+
 .sub-hero {
     font-size: 2em;
     color: white;
@@ -160,4 +216,10 @@ h2 {
     font-family: 'Merriweather', serif;
     text-transform: uppercase;
     text-align: left;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .sub-hero {
+        text-align: center;
+    }
 }

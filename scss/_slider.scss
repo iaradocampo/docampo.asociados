@@ -1,116 +1,86 @@
-.gtco-testimonials {
-    position: relative;
-    margin: 8rem 0 7rem 0;
-    margin-bottom: 10rem;
+h3 {
+    font-size: 1.5em;
+    color: #02676d;
+    text-align: center;
+}
 
-    .owl-stage-outer {
-        padding: 2rem 0;
-    }
+strong {
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #666666;
+}
 
-    .owl-nav {
-        display: none;
-    }
+.swiper {
+    margin: 5rem 0 8rem 0;
+    padding: 0 3rem;
+}
 
-    .owl-dots {
-        text-align: center;
-
-        span {
-            display: block;
-            position: relative;
-            height: 0.6rem;
-            width: 0.6rem;
-            margin: 0 5px;
-            border-radius: 50%;
-            background: #fff !important;
-            border: 2px solid #02676d;
-        }
-
-        .active {
-            box-shadow: none;
-
-            span {
-                height: 0.7rem;
-                width: 0.7rem;
-                background: #02676d !important;
-                box-shadow: none;
-            }
-        }
-    }
-
-    .card {
-        box-shadow: 7px 8px 30px -7px #02686d6b;
-        margin: 0 1.2rem;
-        padding: 0 0.6rem;
-        border-radius: 1.2rem;
-        border: 0;
-
-        .card-img-top {
-            max-width: 100px;
-            border-radius: 50%;
-            margin: 15px auto 0;
-            box-shadow: 0 8px 20px -4px #919090;
-            width: 100px;
-            height: 100px;
-        }
-
-        h5 {
-            color: #02676d;
-            font-size: 1.3em;
-            line-height: 1.3;
-
-            span {
-                font-size: 1.2em;
-                color: #666666;
-            }
-        }
-
-        p {
-            font-size: 1.2em;
-            color: black;
-            padding-bottom: 1rem;
-        }
-    }
-
-    .active {
-        opacity: 0.5;
-        transition: all 0.3s;
-    }
-
-    .center {
-        opacity: 1;
-
-        h5 {
-            font-size: 24px;
-
-            span {
-                font-size: 20px;
-            }
-        }
-
-        .card-img-top {
-            max-width: 100%;
-            height: 120px;
-            width: 120px;
-        }
+@media (min-width:320px) and (max-width: 768px) {
+    .swiper {
+        padding: 0 1rem;
     }
 }
 
-@media (max-width: 767px) {
-    .gtco-testimonials {
-        margin-top: 20px;
+@media (max-width: 1024px) {
+    .swiper {
+        padding: 0 0.8rem;
     }
 }
 
-.owl-carousel {
-    .owl-nav button {
+.swiper-wrapper {
+    margin-top: 3rem;
+    height: 40rem;
+}
 
-        &.owl-next,
-        &.owl-prev {
-            outline: 0;
-        }
-    }
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 32rem;
+    padding-top: 2rem;
+    box-shadow: 7px 8px 40px -7px #b3b3b39f;
+    border-radius: 1.2rem;
+    border: 0;
+    user-select: none;
+}
 
-    button.owl-dot {
-        outline: 0;
+@media (max-width: 1024px) {
+    .swiper-slide {
+        height: 36rem;
     }
+}
+
+@media (max-width: 320px) {
+    .swiper-slide {
+        height: 37rem;
+    }
+}
+
+.card-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+    box-shadow: 0 8px 20px -4px #919090;
+}
+
+.card-text {
+    text-align: center;
+    font-size: 1.2em;
+    color: black;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 1rem !important;
+    border: 2px solid #02676d;
+    background: #ffff;
+    opacity: 5;
+}
+
+.swiper-pagination-bullet-active {
+    border: none;
+    background: #02686d88 !important;
+    transition: all .4s;
 }

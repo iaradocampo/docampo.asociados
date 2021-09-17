@@ -32,6 +32,18 @@ nav {
     }
 }
 
+.navbar-toggler {
+    font-size: 2em;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.bi-list {
+    color: #02676d;
+}
+
 .fixed-top {
     position: fixed;
     top: 0;
