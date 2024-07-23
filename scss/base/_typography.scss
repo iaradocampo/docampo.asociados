@@ -1,0 +1,114 @@
+//TITLES
+h1 {
+    font-family: $secondary-font;
+    font-size: $m-title;
+    color: $primary-color;
+}
+
+h2 {
+    font-family: $secondary-font;
+    font-size: $s-title;
+    color: $primary-color;
+}
+
+h3{
+    font-size: $secondary-fs;
+    color: $primary-color;
+    
+}
+
+.subtitle{
+    font-size: $general-fs;
+    letter-spacing: 2px;
+    color: $secondary-color;
+}
+
+//HERO
+.hero-title {
+    font-size: $general-fs;
+    color: $general-color;
+    text-transform: uppercase;
+}
+
+@media (min-width: 280px) and (max-width: 375px) {
+    .hero-title {
+        font-size: $m-title;
+    }
+}
+
+.hero-subtitle {
+    font-size: $general-fs;
+    color: $general-color;
+    text-transform: uppercase;
+}
+
+.hero-p{
+    font-size: $s-title;
+    color: $general-color;
+}
+
+//PARAGRAPHS & LINKS
+.paragraph {
+    font-size: $general-fs;
+}
+
+.paragraph-white{
+    color: $general-color;
+}
+
+.link-info {
+    font-size: $general-fs;
+    color: #000;
+    position: relative;
+    &:hover {
+        text-decoration: none;
+        color: $primary-color;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0px;
+        margin: -5px 0;
+        background-color: $primary-color;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.4s ease-in-out 0s;
+    }
+    &:hover:before {
+        visibility: visible;
+        transform: scaleX(1);
+    }
+}
+
+.link-contacto {
+    color: $general-color;
+    &:hover {
+        text-decoration: none;
+        color: grey;
+    }
+}
+
+//CARDS 
+.title-card {
+    color: $general-color;
+    font-size: $general-fs;
+    font-family: $secondary-font;
+}
+
+.text-card{
+    color: $general-color;
+    font-size: $general-fs;
+    text-align: center;
+}
+
+.link-card {
+    font-family: $secondary-font;
+    color: $general-color;
+
+    &:hover {
+        color: $secondary-color;
+        text-decoration: none;
+    }
+}

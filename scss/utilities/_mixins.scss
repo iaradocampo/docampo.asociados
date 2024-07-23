@@ -1,0 +1,17 @@
+@mixin query($breakpoint){
+    @if $breakpoint == large{
+        @media (min-width: 992px){
+            @content;
+        }
+    }
+    @if $breakpoint == medium{
+        @media (min-width: 768px){
+            @content;
+        }
+    }
+    @if $breakpoint == small{
+        @media (min-width: 280px){
+            @content;
+        }
+    }
+}

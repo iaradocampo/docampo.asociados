@@ -1,0 +1,734 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+strong {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #666666;
+}
+
+.swiper {
+  margin: 5rem 0 8rem 0;
+  padding: 0 3rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .swiper {
+    padding: 0 1rem;
+  }
+}
+@media (max-width: 1024px) {
+  .swiper {
+    padding: 0 0.8rem;
+  }
+}
+.swiper-wrapper {
+  margin-top: 3rem;
+  height: 40rem;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 32rem;
+  padding-top: 2rem;
+  box-shadow: 7px 8px 40px -1px rgba(179, 179, 179, 0.6235294118);
+  border-radius: 1.2rem;
+  border: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .swiper-slide {
+    height: 37rem;
+  }
+}
+@media (max-width: 320px) {
+  .swiper-slide {
+    height: 37rem;
+  }
+}
+.card-img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 100%;
+  box-shadow: 0 8px 20px -4px #919090;
+  filter: grayscale(100%);
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1.2em;
+  color: black;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  margin: 0 1rem !important;
+  border: 2px solid #02676d;
+  background: white;
+  opacity: 5;
+}
+
+.swiper-pagination-bullet-active {
+  border: none;
+  background: rgba(2, 104, 109, 0.5333333333) !important;
+  border: none;
+  transition: all 0.4s;
+}
+
+.c-text {
+  text-align: center;
+}
+
+.l-text {
+  text-align: left;
+}
+
+.r-text {
+  text-align: right;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.pd {
+  padding: 1rem;
+}
+
+.p-r1 {
+  padding-right: 1rem;
+}
+
+.p-l1 {
+  padding-left: 1rem;
+}
+
+.p-t1 {
+  padding-top: 1rem;
+}
+
+.p-b1 {
+  padding-bottom: 1rem;
+}
+
+.p-t2 {
+  padding-top: 2rem;
+}
+
+.p-b2 {
+  padding-bottom: 2rem;
+}
+
+.p-b4 {
+  padding-bottom: 4rem;
+}
+
+.p-t4 {
+  padding-top: 4rem;
+}
+
+.p-t6 {
+  padding-top: 6rem;
+}
+
+.p-b6 {
+  padding-bottom: 6rem;
+}
+
+.p-l20 {
+  padding-left: 20rem;
+}
+
+.m-t1 {
+  margin-top: 1rem;
+}
+
+.m-b1 {
+  margin-bottom: 1rem;
+}
+
+.m-t2 {
+  margin-top: 2rem;
+}
+
+.m-b2 {
+  margin-bottom: 2rem;
+}
+
+.m-t3 {
+  margin-top: 3rem;
+}
+
+.gap {
+  row-gap: 3rem;
+}
+
+.l-height {
+  line-height: 2em;
+}
+
+.type-italic {
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1em;
+}
+
+h1 {
+  font-family: "Merriweather", serif;
+  font-size: 2.5em;
+  color: #213243;
+}
+
+h2 {
+  font-family: "Merriweather", serif;
+  font-size: 2em;
+  color: #213243;
+}
+
+h3 {
+  font-size: 1.6em;
+  color: #213243;
+}
+
+.subtitle {
+  font-size: 1em;
+  letter-spacing: 2px;
+  color: #CB935D;
+}
+
+.hero-title {
+  font-size: 1em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+@media (min-width: 280px) and (max-width: 375px) {
+  .hero-title {
+    font-size: 2.5em;
+  }
+}
+.hero-subtitle {
+  font-size: 1em;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero-p {
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.paragraph {
+  font-size: 1em;
+}
+
+.paragraph-white {
+  color: #ffffff;
+}
+
+.link-info {
+  font-size: 1em;
+  color: #000;
+  position: relative;
+}
+.link-info:hover {
+  text-decoration: none;
+  color: #213243;
+}
+.link-info:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  margin: -5px 0;
+  background-color: #213243;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.4s ease-in-out 0s;
+}
+.link-info:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.link-contacto {
+  color: #ffffff;
+}
+.link-contacto:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+.title-card {
+  color: #ffffff;
+  font-size: 1em;
+  font-family: "Merriweather", serif;
+}
+
+.text-card {
+  color: #ffffff;
+  font-size: 1em;
+  text-align: center;
+}
+
+.link-card {
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+}
+.link-card:hover {
+  color: #CB935D;
+  text-decoration: none;
+}
+
+.main-hero {
+  height: 600px;
+  background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url(../../assets/images/palacio-justicia.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.main-hero .main-hero-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .main-hero .main-hero-container {
+    padding-left: 0;
+  }
+}
+
+.primary-btn {
+  background-color: #213243;
+  color: #ffffff;
+  margin-top: 1rem;
+  padding: 0.8rem 1rem;
+  border: 2px solid #213243;
+  border-radius: 0.5rem;
+}
+.primary-btn:hover {
+  background-color: rgba(33, 50, 67, 0.6352941176);
+  border: 2px solid #213243;
+}
+
+.servicies {
+  background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../../assets/images/palacio-justicia-interior.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100%;
+  padding: 5rem;
+}
+.servicies div span {
+  color: #CB935D;
+  letter-spacing: 2px;
+}
+.servicies div h2 {
+  color: #ffffff;
+}
+.servicies .card-container {
+  height: 20rem;
+  background-color: rgba(33, 50, 67, 0.6352941176);
+  border-radius: 0rem;
+}
+.servicies .card-container:hover {
+  background-color: #213243;
+}
+.servicies .card-container a {
+  font-size: 1.2em;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  text-align: center;
+}
+.servicies .card-container a:hover {
+  color: #CB935D;
+  text-decoration: none;
+}
+.servicies .card-container .card-icon {
+  display: flex;
+  justify-content: center;
+}
+.servicies .card-container .card-icon i {
+  font-size: 2rem;
+  color: #CB935D;
+  background-attachment: fixed;
+}
+
+.contact-box div span {
+  color: #CB935D;
+  letter-spacing: 2px;
+}
+.contact-box ul li {
+  list-style: none;
+}
+.contact-box ul li span {
+  margin-right: 0.5rem;
+}
+
+.hero {
+  width: 100%;
+  position: relative;
+  height: 600px;
+}
+.hero::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8));
+}
+.hero .hero-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero .hero-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+hr {
+  width: 30%;
+  border: 1px solid #02676d;
+}
+
+.bi-geo-alt,
+.bi-telephone,
+.bi-envelope {
+  color: white;
+  font-size: 1.6em;
+}
+
+.fas {
+  width: 100px;
+  height: 100px;
+  padding: 1.6rem 0;
+  text-align: center;
+  font-size: 3em;
+  color: #ecebeb;
+  background: #02676d;
+  border-radius: 100%;
+}
+
+nav {
+  height: 100%;
+  background-color: #ffffff;
+}
+nav .logo {
+  max-height: 100px;
+}
+nav .nav-link {
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #213243;
+}
+nav .nav-link:hover {
+  color: #CB935D;
+}
+nav .navbar-toggler {
+  font-size: 2em;
+}
+nav .navbar-toggler:focus {
+  outline: none;
+}
+nav .bi-list {
+  color: #213243;
+}
+
+footer {
+  background-color: #213243;
+  height: 20rem;
+}
+footer img {
+  height: 100px;
+}
+footer small {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+  color: #ffffff;
+}
+footer ul li {
+  list-style-type: none;
+}
+footer ul li span {
+  margin-right: 0.5rem;
+}
+footer nav {
+  background-color: transparent;
+}
+footer nav ul li {
+  list-style-type: none;
+}
+footer nav ul li a {
+  color: #ffffff;
+}
+footer nav ul li a:hover {
+  color: #CB935D;
+  text-decoration: none;
+}
+footer nav ul li .active-link {
+  color: #CB935D;
+}
+footer .border-t {
+  border-top: 1px solid #ffffff;
+  padding-top: 2rem;
+}
+footer .link-footer {
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.box-nosotros {
+  margin-bottom: 6rem;
+}
+
+@media (min-width: 360px) and (max-width: 540px) {
+  .asesoria {
+    width: 100%;
+  }
+}
+.asesoria-box {
+  padding-bottom: 0.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+#asesoria-left {
+  margin-left: 30rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  #asesoria-left {
+    margin-left: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  #asesoria-left {
+    margin-left: 21rem;
+  }
+}
+.icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+form label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 55px;
+  padding: 10px 25px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-size: 1em;
+  color: #213243;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid #b3b3b3;
+  border-bottom: none;
+}
+form input {
+  outline: none;
+  border: none;
+  color: #adadad;
+  height: 55px;
+}
+form input:focus {
+  border-color: transparent !important;
+}
+form .input {
+  width: 100%;
+  position: relative;
+  border: 1px solid #b3b3b3;
+}
+form .input-name,
+form .input-last-name {
+  width: 50%;
+}
+@media (min-width: 280px) {
+  form .input-name,
+  form .input-last-name {
+    width: 100%;
+  }
+}
+form .input-last-name {
+  border-left: none;
+}
+@media (min-width: 280px) {
+  form .input-last-name {
+    border-left: 1px solid #b3b3b3;
+    border-top: none;
+  }
+}
+form .input-text {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-size: 1em;
+  color: black;
+  padding: 0 25px;
+  height: 55px;
+}
+form .input-text:focus + .focus-input {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+form textarea {
+  outline: none;
+  border: none;
+  color: #adadad;
+}
+form textarea:focus {
+  border-color: transparent !important;
+}
+form textarea.input-text {
+  min-height: 139px;
+  padding-top: 19px;
+  padding-bottom: 15px;
+}
+form .focus-input {
+  position: absolute;
+  display: block;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  top: -1px;
+  left: -1px;
+  pointer-events: none;
+  border: 1px solid #213243;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s;
+  transform: scaleX(1.1) scaleY(1.3);
+}
+form .btn-form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 23px;
+}
+form .disabled-button {
+  background: #333333;
+}
+form #enviar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 200px;
+  height: 50px;
+  outline: none !important;
+  border: none;
+  background: transparent;
+  border-radius: 2px;
+  background: #213243;
+  font-size: 0.8em;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.4s;
+}
+form #enviar:hover {
+  cursor: pointer;
+  background: #CB935D;
+}
+
+.bg-contacto {
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../../assets/images/palacio-justicia.jpg);
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  padding-top: 8rem;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .bg-contacto {
+    width: 100%;
+    height: 60rem;
+    background-position: top;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .bg-contacto {
+    width: 100%;
+    height: 45rem;
+    background-position: top;
+  }
+}
+.bg-form {
+  width: 50%;
+  height: 100%;
+  padding: 5rem 0 0 0;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+  .bg-form {
+    width: 100%;
+  }
+}
+.contacto {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-contacto {
+  padding: 12rem;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .box-contacto {
+    padding: 5rem 0;
+  }
+}
+.text-contacto {
+  padding: 0 1rem;
+}
+
+.icon-contacto {
+  padding-left: 0.5rem;
+}
+
+.text-box {
+  width: 100%;
+  padding-top: 3rem;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.text {
+  padding-left: 2rem;
+}

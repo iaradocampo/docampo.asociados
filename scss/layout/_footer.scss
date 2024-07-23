@@ -1,0 +1,48 @@
+footer {
+    background-color: $primary-color;
+    height: 20rem;
+    img{
+        height: 100px;
+    }
+    small {
+        display: block;
+        text-align: center;
+        font-size: $general-fs;
+        color: $general-color;
+    }
+    ul{
+        li{
+            list-style-type: none;
+            span{
+                margin-right: 0.5rem;
+            }
+        }
+    }
+    nav{
+        background-color: transparent;
+        ul{
+            li{
+                list-style-type: none;
+                a{
+                    color: $general-color;
+                    &:hover{
+                        color: $secondary-color;
+                        text-decoration: none;
+                    }
+                }
+                .active-link{
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+    .border-t {
+        border-top: 1px solid $general-color;
+        padding-top: 2rem;
+    }
+    .link-footer {
+        text-align: center;
+        font-weight: 400;
+        color: $general-color;
+    }
+}

@@ -1,9 +1,3 @@
-h3 {
-    font-size: 1.5em;
-    color: #02676d;
-    text-align: center;
-}
-
 strong {
     font-size: 1.1em;
     font-weight: 600;
@@ -38,15 +32,15 @@ strong {
     align-items: center;
     height: 32rem;
     padding-top: 2rem;
-    box-shadow: 7px 8px 40px -7px #b3b3b39f;
+    box-shadow: 7px 8px 40px -1px #b3b3b39f;
     border-radius: 1.2rem;
     border: 0;
     user-select: none;
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1199px) {
     .swiper-slide {
-        height: 36rem;
+        height: 37rem;
     }
 }
 
@@ -62,6 +56,7 @@ strong {
     object-fit: cover;
     border-radius: 100%;
     box-shadow: 0 8px 20px -4px #919090;
+    filter: grayscale(100%);
 }
 
 .card-text {
@@ -82,5 +77,6 @@ strong {
 .swiper-pagination-bullet-active {
     border: none;
     background: #02686d88 !important;
+    border: none;
     transition: all .4s;
 }

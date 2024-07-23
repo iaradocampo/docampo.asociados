@@ -1,0 +1,25 @@
+nav {
+    height: 100%;
+    background-color: $general-color;
+    .logo {
+       max-height: 100px;
+    }
+    .nav-link {
+        font-size: 1em;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: $primary-color;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+    .navbar-toggler {
+        font-size: 2em;
+        &:focus {
+            outline: none;
+        }
+    }
+    .bi-list {
+        color: $primary-color;
+    }
+}
