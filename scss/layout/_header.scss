@@ -13,6 +13,33 @@ nav {
             color: $secondary-color;
         }
     }
+    .dropdown{
+        &:hover{
+            .dropdown-content{
+                display: block;
+            }
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: $general-color;
+            min-width: 160px;
+            .nav-item{
+                list-style: none;
+                .link-dropdown{
+                    display: block;
+                    font-size: 0.8em;
+                    color: $primary-color;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 12px 16px;
+                    &:hover{
+                        color: $secondary-color;
+                    }
+                }
+            }
+        }
+    }
     .navbar-toggler {
         font-size: 2em;
         &:focus {

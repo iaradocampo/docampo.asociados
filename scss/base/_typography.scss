@@ -1,7 +1,13 @@
 //TITLES
-h1 {
+.h1-idex {
     font-family: $secondary-font;
     font-size: $m-title;
+    color: $primary-color;
+}
+
+.h1{
+    font-family: $secondary-font;
+    font-size: $secondary-fs;
     color: $primary-color;
 }
 
