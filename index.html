@@ -12,10 +12,6 @@
     <link rel="stylesheet" href="./css/main.css">
     <!--ICONS-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!--FONTS-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/logo/d&a-favicon.ico">
     <title>Docampo & Asociados - Asesoramiento jurídico</title>
     <meta name="description" content="Docampo & Asociados. Un equipo de profesionales unidos con el objetivo de brindar asesoramiento integral en múltiples áreas con el conocimiento necesario para una asistencia adecuada al cliente.">
@@ -33,8 +29,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/asesoramiento.html">áreas de práctica</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="./asesoramiento.html">áreas de práctica</a>
+                            <ul class="dropdown-content">
+                                <li class="nav-item"><a href="" class="nav-link link-dropdown">daños y perjuicios</a></li>
+                                <li class="nav-item"><a href="" class="nav-link link-dropdown">derecho de familia</a></li>
+                                <li class="nav-item"><a href="" class="nav-link link-dropdown">derecho laboral</a></li>
+                                <li class="nav-item"><a href="" class="nav-link link-dropdown">derecho previsional</a></li>
+                                <li class="nav-item"><a href="" class="nav-link link-dropdown">derecho empresarial</a></li>
+                                <li class="nav-item"><a href="" class="nav-link link-dropdown">derecho ambiental</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/nosotros.html">equipo</a>
@@ -47,8 +51,8 @@
             </div>
         </nav>
     </header>
-    <section class="main-hero">
-        <div class="main-hero-container">
+    <section class="hero">
+        <div class="hero__container">
             <div class="container">
                 <p class="hero-title l-text">docampo & asociados</p>
                 <p class="hero-subtitle l-text">asesoramiento juridico</p>
@@ -59,7 +63,7 @@
     <main class="container p-t6 p-b6">
         <div class="row justify-content-between">
             <div class="col-lg-4 col-md-4">
-                <h1>Docampo & Asociados</h1>
+                <h1 class="h1-idex">Docampo & Asociados</h1>
                 <p class="subtitle p-t1">ASESORAMIENTO JURIDICO</p>
                 <p class="paragraph type-italic l-height p-t1">Nuestro objetivo es proporcionar un servicio de alta calidad, 
                     basado en principios éticos y profesionales, asegurando resultados satisfactorios y duraderos.
@@ -74,7 +78,7 @@
                 <p class="paragraph l-height">Valoramos la confianza de nuestros clientes y buscamos establecer relaciones de largo plazo, 
                     ofreciendo asesoramiento que anticipa y resuelve desafíos complejos con un enfoque personalizado y proactivo.
                 </p>
-                <button class="primary-btn">Nuestro equipo</button>
+                <button class="primary-btn"><a href="./pages/nosotros.html">Nuestro equipo</a></button>
             </div>
         </div>
     </main>
@@ -165,7 +169,7 @@
     </section>
     <section class="container p-t6 p-b6">
         <div class="row">
-            <div class="col-lg-6 col-md-4 contact-box">
+            <div class="col-lg-6 col-md-4 section-contact">
                 <div class="p-b1">
                     <span>NUESTROS CANALES DE CONTACTO</span>
                     <h3 class="m-t1">Comunicate con nosotros</h3>
