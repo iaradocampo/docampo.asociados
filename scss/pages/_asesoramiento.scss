@@ -26,3 +26,32 @@
         }
     }
 }
+
+.review-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: flex-end;
+    .review-text{
+        width: 45rem;
+    }
+}
+
+.review-img-container{
+    height: 400px;
+    padding-top: 2rem;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.review-img-contacto{
+    border-radius: 100%;
+    height: 300px;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}

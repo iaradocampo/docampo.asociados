@@ -35,7 +35,9 @@ strong {
   box-shadow: 7px 8px 40px -1px rgba(179, 179, 179, 0.6235294118);
   border-radius: 1.2rem;
   border: 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -51,7 +53,8 @@ strong {
 .card-img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 100%;
   box-shadow: 0 8px 20px -4px #919090;
   filter: grayscale(100%);
@@ -440,6 +443,7 @@ nav .dropdown .dropdown-content {
   display: none;
   position: absolute;
   background-color: #ffffff;
+  z-index: 1;
   min-width: 160px;
 }
 nav .dropdown .dropdown-content .nav-item {
@@ -530,7 +534,8 @@ footer .link-footer {
 .practice-area .practice-area-card .practice-area-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .practice-area .practice-area-card .practice-area-text {
   padding: 2rem;
@@ -544,13 +549,45 @@ footer .link-footer {
   bottom: 3rem;
 }
 
+.review-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: flex-end;
+}
+.review-container .review-text {
+  width: 45rem;
+}
+
+.review-img-container {
+  height: 400px;
+  padding-top: 2rem;
+}
+.review-img-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.review-img-contacto {
+  border-radius: 100%;
+  height: 300px;
+}
+.review-img-contacto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .contacto .contacto-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.jpg);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -704,4 +741,4 @@ form #enviar:hover {
 
 .text {
   padding-left: 2rem;
-}/*# sourceMappingURL=main.css.map */
+}

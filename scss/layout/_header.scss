@@ -23,6 +23,7 @@ nav {
             display: none;
             position: absolute;
             background-color: $general-color;
+            z-index: 1;
             min-width: 160px;
             .nav-item{
                 list-style: none;
