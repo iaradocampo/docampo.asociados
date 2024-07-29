@@ -27,12 +27,36 @@
     }
 }
 
-.review-container{
+.items-practicearea-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: flex-end;
-    .review-text{
+    .items-practicearea-review{
         width: 45rem;
+        ul{
+            margin-left: 2rem;
+        }
+    }
+    .items-practicearea-contact{
+        .items-practicearea-staff{
+            display: flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            .items-practicearea-image{
+                padding-right: 2rem;
+                img{
+                    border-radius: 50%;
+                    width: 80px;
+                    height: 80px;
+                    object-fit: cover;
+                }
+            }
+            .items-practicearea-text{
+                p{
+                    line-height: 0.6rem;
+                }
+            }
+        }
     }
 }
 
@@ -46,12 +70,3 @@
     }
 }
 
-.review-img-contacto{
-    border-radius: 100%;
-    height: 300px;
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-}

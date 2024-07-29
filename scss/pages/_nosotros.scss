@@ -1,3 +1,52 @@
-.box-nosotros {
-    margin-bottom: 6rem;
+.toggle-cards{
+    .toggle-card{
+        .toggle-card-img{
+            position: relative;
+            transition: .3s ease-in-out;
+            width: 200px;
+            height: 200px;
+            &:hover{
+                .overlay{
+                    opacity: 1;
+                }
+            }
+            img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            .overlay{
+                position: absolute;
+                opacity: 0;
+                transition: .5s ease;
+                background-color: rgba(128, 128, 128, 0.486);
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                button{
+                    border: none;
+                    i{
+                        position: absolute;
+                        color: $general-color;
+                        font-size: $s-title;
+                        text-align: center;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
 }
