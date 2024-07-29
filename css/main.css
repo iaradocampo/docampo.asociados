@@ -35,9 +35,7 @@ strong {
   box-shadow: 7px 8px 40px -1px rgba(179, 179, 179, 0.6235294118);
   border-radius: 1.2rem;
   border: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -53,8 +51,7 @@ strong {
 .card-img {
   width: 150px;
   height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
   box-shadow: 0 8px 20px -4px #919090;
   filter: grayscale(100%);
@@ -515,8 +512,52 @@ footer .link-footer {
   color: #ffffff;
 }
 
-.box-nosotros {
-  margin-bottom: 6rem;
+.toggle-cards .toggle-card .toggle-card-img {
+  position: relative;
+  transition: 0.3s ease-in-out;
+  width: 200px;
+  height: 200px;
+}
+.toggle-cards .toggle-card .toggle-card-img:hover .overlay {
+  opacity: 1;
+}
+.toggle-cards .toggle-card .toggle-card-img img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.toggle-cards .toggle-card .toggle-card-img .overlay {
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(128, 128, 128, 0.486);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+.toggle-cards .toggle-card .toggle-card-img .overlay button {
+  border: none;
+}
+.toggle-cards .toggle-card .toggle-card-img .overlay button i {
+  position: absolute;
+  color: #ffffff;
+  font-size: 2em;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
 }
 
 .practice-area {
@@ -534,8 +575,7 @@ footer .link-footer {
 .practice-area .practice-area-card .practice-area-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .practice-area .practice-area-card .practice-area-text {
   padding: 2rem;
@@ -549,13 +589,33 @@ footer .link-footer {
   bottom: 3rem;
 }
 
-.review-container {
+.items-practicearea-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: flex-end;
 }
-.review-container .review-text {
+.items-practicearea-container .items-practicearea-review {
   width: 45rem;
+}
+.items-practicearea-container .items-practicearea-review ul {
+  margin-left: 2rem;
+}
+.items-practicearea-container .items-practicearea-contact .items-practicearea-staff {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+.items-practicearea-container .items-practicearea-contact .items-practicearea-staff .items-practicearea-image {
+  padding-right: 2rem;
+}
+.items-practicearea-container .items-practicearea-contact .items-practicearea-staff .items-practicearea-image img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+.items-practicearea-container .items-practicearea-contact .items-practicearea-staff .items-practicearea-text p {
+  line-height: 0.6rem;
 }
 
 .review-img-container {
@@ -565,19 +625,7 @@ footer .link-footer {
 .review-img-container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.review-img-contacto {
-  border-radius: 100%;
-  height: 300px;
-}
-.review-img-contacto img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .contacto {
@@ -586,11 +634,11 @@ footer .link-footer {
 }
 .contacto .contacto-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-position: center;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .contacto .contacto-bg ul li {
   list-style: none;
@@ -741,4 +789,4 @@ form #enviar:hover {
 
 .text {
   padding-left: 2rem;
-}
+}/*# sourceMappingURL=main.css.map */
