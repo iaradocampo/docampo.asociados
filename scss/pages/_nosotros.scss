@@ -1,6 +1,8 @@
-.toggle-cards{
-    .toggle-card{
-        .toggle-card-img{
+.staff-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .staff-card{
+        .staff-card-img{
             position: relative;
             transition: .3s ease-in-out;
             width: 200px;
@@ -41,12 +43,15 @@
                 }
             }
         }
+        .staff-card-info{
+            display: none;
+        }
     }
 }
 
-.hidden{
-    display: none;
-}
-.visible{
-    display: block;
+// .hidden{
+//     display: none;
+// }
+.active{
+    background-color: white;
 }

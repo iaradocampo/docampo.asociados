@@ -35,7 +35,9 @@ strong {
   box-shadow: 7px 8px 40px -1px rgba(179, 179, 179, 0.6235294118);
   border-radius: 1.2rem;
   border: 0;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -51,7 +53,8 @@ strong {
 .card-img {
   width: 150px;
   height: 150px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 100%;
   box-shadow: 0 8px 20px -4px #919090;
   filter: grayscale(100%);
@@ -512,22 +515,27 @@ footer .link-footer {
   color: #ffffff;
 }
 
-.toggle-cards .toggle-card .toggle-card-img {
+.staff-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.staff-cards .staff-card .staff-card-img {
   position: relative;
   transition: 0.3s ease-in-out;
   width: 200px;
   height: 200px;
 }
-.toggle-cards .toggle-card .toggle-card-img:hover .overlay {
+.staff-cards .staff-card .staff-card-img:hover .overlay {
   opacity: 1;
 }
-.toggle-cards .toggle-card .toggle-card-img img {
+.staff-cards .staff-card .staff-card-img img {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
-.toggle-cards .toggle-card .toggle-card-img .overlay {
+.staff-cards .staff-card .staff-card-img .overlay {
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
@@ -539,10 +547,10 @@ footer .link-footer {
   height: 100%;
   width: 100%;
 }
-.toggle-cards .toggle-card .toggle-card-img .overlay button {
+.staff-cards .staff-card .staff-card-img .overlay button {
   border: none;
 }
-.toggle-cards .toggle-card .toggle-card-img .overlay button i {
+.staff-cards .staff-card .staff-card-img .overlay button i {
   position: absolute;
   color: #ffffff;
   font-size: 2em;
@@ -551,13 +559,12 @@ footer .link-footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-.hidden {
+.staff-cards .staff-card .staff-card-info {
   display: none;
 }
 
-.visible {
-  display: block;
+.active {
+  background-color: white;
 }
 
 .practice-area {
@@ -575,7 +582,8 @@ footer .link-footer {
 .practice-area .practice-area-card .practice-area-img img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .practice-area .practice-area-card .practice-area-text {
   padding: 2rem;
@@ -612,7 +620,8 @@ footer .link-footer {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .items-practicearea-container .items-practicearea-contact .items-practicearea-staff .items-practicearea-text p {
   line-height: 0.6rem;
@@ -625,7 +634,8 @@ footer .link-footer {
 .review-img-container img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .contacto {
@@ -634,7 +644,8 @@ footer .link-footer {
 }
 .contacto .contacto-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.jpg);
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -789,4 +800,4 @@ form #enviar:hover {
 
 .text {
   padding-left: 2rem;
-}/*# sourceMappingURL=main.css.map */
+}
