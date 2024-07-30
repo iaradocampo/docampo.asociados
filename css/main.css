@@ -552,14 +552,6 @@ footer .link-footer {
   transform: translate(-50%, -50%);
 }
 
-.hidden {
-  display: none;
-}
-
-.visible {
-  display: block;
-}
-
 .practice-area {
   margin-top: 4rem;
   margin-bottom: 4rem;
