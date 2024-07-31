@@ -1,6 +1,15 @@
-.staff-cards{
+.staff-card-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    justify-items: center;
+    margin: 6rem 0;
+    @include query(medium){
+        grid-template-columns: 1fr 1fr;
+    }
+    @include query(small){
+        grid-template-columns: 1fr;
+    }
     .staff-card{
         .staff-card-img{
             position: relative;
@@ -43,15 +52,38 @@
                 }
             }
         }
-        .staff-card-info{
-            display: none;
+        p{
+            font-weight: 500;
+            text-align: center;
+            padding-top: 1rem;
         }
     }
 }
 
-// .hidden{
-//     display: none;
-// }
-.active{
-    background-color: white;
+.modal-body-container{
+    .modal-lawyer{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+        div{
+            img{
+                border-radius: 50%;
+                width: 200px;
+                height: 200px;
+                object-fit: cover;
+            }
+        }
+    }
+    .modal-info{
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem 1rem 0;
+    }
+}
+
+hr {
+    width: 50%;
+    border: 1px solid $primary-color;
+    margin: auto;
 }

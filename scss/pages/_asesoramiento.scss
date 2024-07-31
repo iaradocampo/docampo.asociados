@@ -31,8 +31,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: flex-end;
+    @include query(medium){
+        grid-template-columns: 1fr;
+        justify-items: flex-start;
+    }
     .items-practicearea-review{
         width: 45rem;
+        @include query(medium){
+            width: 100%;
+        }
         ul{
             margin-left: 2rem;
         }

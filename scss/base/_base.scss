@@ -24,6 +24,9 @@
     background-attachment: fixed;
     height: 100%;
     padding: 5rem;
+    @include query(small){
+        padding: 1rem;
+    }
     div{
         span{
             color: $secondary-color;
@@ -34,7 +37,7 @@
         }
     }
     .card-container{
-        height: 20rem;
+        min-height: 20rem;
         background-color: #213243a2;
         border-radius: 0rem;
         &:hover{
@@ -77,6 +80,11 @@
             }
         }
     }
+    @include query(small){
+        iframe{
+            width: 100%;
+        }
+    }
 }
 
 //HERO
@@ -96,11 +104,6 @@
             padding-left: 0;
         }
     }
-}
-
-hr {
-    width: 30%;
-    border: 1px solid #02676d;
 }
 
 .fas {

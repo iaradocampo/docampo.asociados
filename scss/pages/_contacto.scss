@@ -1,6 +1,9 @@
 .contacto {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include query(small){
+        grid-template-columns: 1fr;
+    }
     .contacto-bg {
         background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.jpg);
         object-fit: cover;
@@ -8,6 +11,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include query(small){
+            height: 25rem;
+        }
         ul{
             li{
                 list-style: none;

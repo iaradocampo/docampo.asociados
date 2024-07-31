@@ -35,9 +35,7 @@ strong {
   box-shadow: 7px 8px 40px -1px rgba(179, 179, 179, 0.6235294118);
   border-radius: 1.2rem;
   border: 0;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 @media (min-width: 1024px) and (max-width: 1199px) {
@@ -53,8 +51,7 @@ strong {
 .card-img {
   width: 150px;
   height: 150px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 100%;
   box-shadow: 0 8px 20px -4px #919090;
   filter: grayscale(100%);
@@ -224,11 +221,6 @@ h3 {
   text-transform: uppercase;
 }
 
-@media (min-width: 280px) and (max-width: 375px) {
-  .hero-title {
-    font-size: 2.5em;
-  }
-}
 .hero-subtitle {
   font-size: 1em;
   color: #ffffff;
@@ -329,6 +321,11 @@ h3 {
   height: 100%;
   padding: 5rem;
 }
+@media (max-width: 500px) {
+  .servicies {
+    padding: 1rem;
+  }
+}
 .servicies div span {
   color: #CB935D;
   letter-spacing: 2px;
@@ -337,7 +334,7 @@ h3 {
   color: #ffffff;
 }
 .servicies .card-container {
-  height: 20rem;
+  min-height: 20rem;
   background-color: rgba(33, 50, 67, 0.6352941176);
   border-radius: 0rem;
 }
@@ -374,6 +371,11 @@ h3 {
 .section-contact ul li span {
   margin-right: 0.5rem;
 }
+@media (max-width: 500px) {
+  .section-contact iframe {
+    width: 100%;
+  }
+}
 
 .hero {
   background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia.jpg");
@@ -402,11 +404,6 @@ h3 {
   .hero__container {
     padding-left: 0;
   }
-}
-
-hr {
-  width: 30%;
-  border: 1px solid #02676d;
 }
 
 .fas {
@@ -472,7 +469,7 @@ nav .bi-list {
 
 footer {
   background-color: #213243;
-  height: 20rem;
+  min-height: 20rem;
 }
 footer img {
   height: 100px;
@@ -515,27 +512,39 @@ footer .link-footer {
   color: #ffffff;
 }
 
-.staff-cards {
+.staff-card-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+  margin: 6rem 0;
 }
-.staff-cards .staff-card .staff-card-img {
+@media (max-width: 768px) {
+  .staff-card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .staff-card-container {
+    grid-template-columns: 1fr;
+  }
+}
+.staff-card-container .staff-card .staff-card-img {
   position: relative;
   transition: 0.3s ease-in-out;
   width: 200px;
   height: 200px;
 }
-.staff-cards .staff-card .staff-card-img:hover .overlay {
+.staff-card-container .staff-card .staff-card-img:hover .overlay {
   opacity: 1;
 }
-.staff-cards .staff-card .staff-card-img img {
+.staff-card-container .staff-card .staff-card-img img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
-.staff-cards .staff-card .staff-card-img .overlay {
+.staff-card-container .staff-card .staff-card-img .overlay {
   position: absolute;
   opacity: 0;
   transition: 0.5s ease;
@@ -547,10 +556,10 @@ footer .link-footer {
   height: 100%;
   width: 100%;
 }
-.staff-cards .staff-card .staff-card-img .overlay button {
+.staff-card-container .staff-card .staff-card-img .overlay button {
   border: none;
 }
-.staff-cards .staff-card .staff-card-img .overlay button i {
+.staff-card-container .staff-card .staff-card-img .overlay button i {
   position: absolute;
   color: #ffffff;
   font-size: 2em;
@@ -559,12 +568,34 @@ footer .link-footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.staff-cards .staff-card .staff-card-info {
-  display: none;
+.staff-card-container .staff-card p {
+  font-weight: 500;
+  text-align: center;
+  padding-top: 1rem;
 }
 
-.active {
-  background-color: white;
+.modal-body-container .modal-lawyer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+.modal-body-container .modal-lawyer div img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+.modal-body-container .modal-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 0;
+}
+
+hr {
+  width: 50%;
+  border: 1px solid #213243;
+  margin: auto;
 }
 
 .practice-area {
@@ -582,8 +613,7 @@ footer .link-footer {
 .practice-area .practice-area-card .practice-area-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .practice-area .practice-area-card .practice-area-text {
   padding: 2rem;
@@ -602,8 +632,19 @@ footer .link-footer {
   grid-template-columns: 1fr 1fr;
   justify-items: flex-end;
 }
+@media (max-width: 768px) {
+  .items-practicearea-container {
+    grid-template-columns: 1fr;
+    justify-items: flex-start;
+  }
+}
 .items-practicearea-container .items-practicearea-review {
   width: 45rem;
+}
+@media (max-width: 768px) {
+  .items-practicearea-container .items-practicearea-review {
+    width: 100%;
+  }
 }
 .items-practicearea-container .items-practicearea-review ul {
   margin-left: 2rem;
@@ -620,8 +661,7 @@ footer .link-footer {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .items-practicearea-container .items-practicearea-contact .items-practicearea-staff .items-practicearea-text p {
   line-height: 0.6rem;
@@ -634,22 +674,30 @@ footer .link-footer {
 .review-img-container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .contacto {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (max-width: 500px) {
+  .contacto {
+    grid-template-columns: 1fr;
+  }
+}
 .contacto .contacto-bg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media (max-width: 500px) {
+  .contacto .contacto-bg {
+    height: 25rem;
+  }
 }
 .contacto .contacto-bg ul li {
   list-style: none;
@@ -705,7 +753,7 @@ form .input-name,
 form .input-last-name {
   width: 50%;
 }
-@media (min-width: 280px) {
+@media (max-width: 500px) {
   form .input-name,
   form .input-last-name {
     width: 100%;
@@ -714,7 +762,7 @@ form .input-last-name {
 form .input-last-name {
   border-left: none;
 }
-@media (min-width: 280px) {
+@media (max-width: 500px) {
   form .input-last-name {
     border-left: 1px solid #b3b3b3;
     border-top: none;
@@ -800,4 +848,4 @@ form #enviar:hover {
 
 .text {
   padding-left: 2rem;
-}
+}/*# sourceMappingURL=main.css.map */
