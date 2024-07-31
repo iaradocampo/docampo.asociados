@@ -317,7 +317,6 @@ h3 {
 .servicies {
   background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../assets/images/palacio-justicia-interior.jpg);
   background-size: cover;
-  background-attachment: fixed;
   height: 100%;
   padding: 5rem;
 }
@@ -358,7 +357,6 @@ h3 {
 .servicies .card-container .card-icon i {
   font-size: 2rem;
   color: #CB935D;
-  background-attachment: fixed;
 }
 
 .section-contact div span {
@@ -380,19 +378,16 @@ h3 {
 .hero {
   background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia.jpg");
   background-size: cover;
-  background-attachment: fixed;
   height: 600px;
 }
 .hero--areas-practica {
   background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia-interior.jpg");
   background-size: cover;
-  background-attachment: fixed;
   height: 600px;
 }
 .hero--equipo {
   background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia-2.jpg");
   background-size: cover;
-  background-attachment: fixed;
   height: 600px;
 }
 .hero__container {
