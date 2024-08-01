@@ -1,5 +1,5 @@
 //TITLES
-.h1-idex {
+.h1-index {
     font-family: $secondary-font;
     font-size: $m-title;
     color: $primary-color;
@@ -33,60 +33,25 @@ h3{
     font-size: $general-fs;
     color: $general-color;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .hero-subtitle {
     font-size: $general-fs;
     color: $general-color;
     text-transform: uppercase;
+    text-align: left;
 }
 
 .hero-p{
     font-size: $s-title;
     color: $general-color;
+    text-align: left;
 }
 
 //PARAGRAPHS & LINKS
-.paragraph {
-    font-size: $general-fs;
-}
-
 .paragraph-white{
     color: $general-color;
-}
-
-.link-info {
-    font-size: $general-fs;
-    color: #000;
-    position: relative;
-    &:hover {
-        text-decoration: none;
-        color: $primary-color;
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0px;
-        margin: -5px 0;
-        background-color: $primary-color;
-        visibility: hidden;
-        transform: scaleX(0);
-        transition: all 0.4s ease-in-out 0s;
-    }
-    &:hover:before {
-        visibility: visible;
-        transform: scaleX(1);
-    }
-}
-
-.link-contacto {
-    color: $general-color;
-    &:hover {
-        text-decoration: none;
-        color: grey;
-    }
 }
 
 //CARDS 

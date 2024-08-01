@@ -1,84 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
-strong {
-  font-size: 1.1em;
-  font-weight: 600;
-  color: #666666;
-}
-
-.swiper {
-  margin: 5rem 0 8rem 0;
-  padding: 0 3rem;
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
-  .swiper {
-    padding: 0 1rem;
-  }
-}
-@media (max-width: 1024px) {
-  .swiper {
-    padding: 0 0.8rem;
-  }
-}
-.swiper-wrapper {
-  margin-top: 3rem;
-  height: 40rem;
-}
-
-.swiper-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 32rem;
-  padding-top: 2rem;
-  box-shadow: 7px 8px 40px -1px rgba(179, 179, 179, 0.6235294118);
-  border-radius: 1.2rem;
-  border: 0;
-  user-select: none;
-}
-
-@media (min-width: 1024px) and (max-width: 1199px) {
-  .swiper-slide {
-    height: 37rem;
-  }
-}
-@media (max-width: 320px) {
-  .swiper-slide {
-    height: 37rem;
-  }
-}
-.card-img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 100%;
-  box-shadow: 0 8px 20px -4px #919090;
-  filter: grayscale(100%);
-}
-
-.card-text {
-  text-align: center;
-  font-size: 1.2em;
-  color: black;
-}
-
-.swiper-pagination-bullet {
-  width: 10px;
-  height: 10px;
-  margin: 0 1rem !important;
-  border: 2px solid #02676d;
-  background: white;
-  opacity: 5;
-}
-
-.swiper-pagination-bullet-active {
-  border: none;
-  background: rgba(2, 104, 109, 0.5333333333) !important;
-  border: none;
-  transition: all 0.4s;
-}
-
 .c-text {
   text-align: center;
 }
@@ -184,10 +105,9 @@ strong {
 body {
   font-family: "Roboto", sans-serif;
   font-size: 1em;
-  overflow-x: hidden;
 }
 
-.h1-idex {
+.h1-index {
   font-family: "Merriweather", serif;
   font-size: 2.5em;
   color: #213243;
@@ -220,59 +140,24 @@ h3 {
   font-size: 1em;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .hero-subtitle {
   font-size: 1em;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: left;
 }
 
 .hero-p {
   font-size: 2em;
   color: #ffffff;
-}
-
-.paragraph {
-  font-size: 1em;
+  text-align: left;
 }
 
 .paragraph-white {
   color: #ffffff;
-}
-
-.link-info {
-  font-size: 1em;
-  color: #000;
-  position: relative;
-}
-.link-info:hover {
-  text-decoration: none;
-  color: #213243;
-}
-.link-info:before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 2px;
-  bottom: 0px;
-  margin: -5px 0;
-  background-color: #213243;
-  visibility: hidden;
-  transform: scaleX(0);
-  transition: all 0.4s ease-in-out 0s;
-}
-.link-info:hover:before {
-  visibility: visible;
-  transform: scaleX(1);
-}
-
-.link-contacto {
-  color: #ffffff;
-}
-.link-contacto:hover {
-  text-decoration: none;
-  color: grey;
 }
 
 .title-card {
@@ -410,17 +295,6 @@ h3 {
   .hero__container {
     padding-left: 0;
   }
-}
-
-.fas {
-  width: 100px;
-  height: 100px;
-  padding: 1.6rem 0;
-  text-align: center;
-  font-size: 3em;
-  color: #ecebeb;
-  background: #02676d;
-  border-radius: 100%;
 }
 
 nav {
@@ -587,9 +461,9 @@ footer .link-footer {
   gap: 2rem;
 }
 .modal-body-container .modal-lawyer div img {
-  border-radius: 50%;
   width: 200px;
   height: 200px;
+  border-radius: 50%;
   object-fit: cover;
 }
 .modal-body-container .modal-info {
@@ -708,10 +582,8 @@ hr {
 .contacto .contacto-bg ul li {
   list-style: none;
 }
-.contacto .contacto-bg ul li span i {
-  color: #ffffff;
-  font-size: 1.6em;
-  padding-right: 0.5rem;
+.contacto .contacto-bg ul li span {
+  margin-right: 0.5rem;
 }
 .contacto .contacto-bg ul li span a {
   color: #ffffff;
