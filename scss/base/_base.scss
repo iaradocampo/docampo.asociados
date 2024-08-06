@@ -19,7 +19,7 @@
 }
 
 .servicies{
-    background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../assets/images/palacio-justicia-interior.webp);
+    background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../assets/images/patio-honor.webp);
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -61,6 +61,11 @@
                 font-size: 2rem;
                 color: $secondary-color;
             }
+        }
+        .card-txt{
+            color: $general-color;
+            font-size: $general-fs;
+            text-align: center;
         }
     }
 }

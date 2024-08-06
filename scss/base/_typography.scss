@@ -53,30 +53,7 @@ h3{
     text-align: left;
 }
 
-//PARAGRAPHS & LINKS
+//PARAGRAPH
 .paragraph-white{
     color: $general-color;
-}
-
-//CARDS 
-.title-card {
-    color: $general-color;
-    font-size: $general-fs;
-    font-family: $secondary-font;
-}
-
-.text-card{
-    color: $general-color;
-    font-size: $general-fs;
-    text-align: center;
-}
-
-.link-card {
-    font-family: $secondary-font;
-    color: $general-color;
-
-    &:hover {
-        color: $secondary-color;
-        text-decoration: none;
-    }
 }

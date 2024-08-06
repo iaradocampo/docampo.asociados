@@ -2,13 +2,7 @@ footer {
     background-color: $primary-color;
     min-height: 20rem;
     img{
-        height: 90px;
-    }
-    small {
-        display: block;
-        text-align: center;
-        font-size: $general-fs;
-        color: $general-color;
+        max-height: 90px;
     }
     ul{
         li{
@@ -35,14 +29,5 @@ footer {
                 }
             }
         }
-    }
-    .border-t {
-        border-top: 1px solid $general-color;
-        padding-top: 2rem;
-    }
-    .link-footer {
-        text-align: center;
-        font-weight: 400;
-        color: $general-color;
     }
 }
