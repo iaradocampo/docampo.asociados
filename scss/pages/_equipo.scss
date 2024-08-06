@@ -66,6 +66,10 @@
         justify-content: space-around;
         align-items: center;
         gap: 2rem;
+        margin-top: 1rem;
+        @include query(small){
+            flex-wrap: wrap;
+        }
         div{
             img{
                 width: 200px;
@@ -79,6 +83,19 @@
         display: flex;
         justify-content: space-between;
         padding: 1rem 1rem 0;
+        width: 80%;
+        @include query(small){
+            flex-direction: column;
+            padding: 0;
+            width: 100%;
+        }
+        div{
+            p{
+                &:first-child{
+                    font-weight: 600;
+                }
+            }
+        }
     }
 }
 

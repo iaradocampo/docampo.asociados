@@ -42,12 +42,8 @@ nav {
         }
     }
     .navbar-toggler {
-        font-size: 2em;
         &:focus {
             outline: none;
         }
-    }
-    .bi-list {
-        color: $primary-color;
     }
 }

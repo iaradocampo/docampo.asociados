@@ -11,10 +11,14 @@
     color: $primary-color;
 }
 
-h2 {
+.h2 {
     font-family: $secondary-font;
     font-size: $s-title;
     color: $primary-color;
+}
+
+.modal-h2{
+    font-size: 1.3em;
 }
 
 h3{
