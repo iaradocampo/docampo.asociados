@@ -5,7 +5,7 @@
         grid-template-columns: 1fr;
     }
     .contacto-bg {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.webp);
         object-fit: cover;
         background-position: center;
         display: flex;
@@ -19,7 +19,7 @@
                 list-style: none;
                 margin-bottom: 2rem;
                 span{
-                    margin-left: 0.5rem;
+                    margin-left: 0.3rem;
                 }
                 span{
                     a{

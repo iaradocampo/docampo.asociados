@@ -210,7 +210,7 @@ h3 {
 }
 
 .servicies {
-  background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../assets/images/palacio-justicia-interior.jpg);
+  background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../assets/images/palacio-justicia-interior.webp);
   background-size: cover;
   background-attachment: fixed;
   height: 100%;
@@ -273,25 +273,24 @@ h3 {
 }
 
 .hero {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 600px;
-}
-.hero--areas-practica {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia-interior.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  height: 600px;
-}
-.hero--equipo {
-  background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia-2.jpg");
+  background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia.webp");
   background-size: cover;
   background-attachment: fixed;
   height: 600px;
 }
 @media (max-width: 500px) {
   .hero {
+    background-attachment: initial;
+  }
+}
+.hero--areas-practica {
+  background-image: linear-gradient(rgba(12, 12, 12, 0.8), rgba(12, 12, 12, 0.8)), url("../assets/images/palacio-justicia-interior.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+}
+@media (max-width: 500px) {
+  .hero--areas-practica {
     background-attachment: initial;
   }
 }
@@ -311,7 +310,7 @@ nav {
   background-color: #ffffff;
 }
 nav .logo {
-  max-height: 100px;
+  max-height: 90px;
 }
 nav .nav-link {
   font-size: 1em;
@@ -355,7 +354,7 @@ footer {
   min-height: 20rem;
 }
 footer img {
-  height: 100px;
+  height: 90px;
 }
 footer small {
   display: block;
@@ -425,8 +424,7 @@ footer .link-footer {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .staff-card-container .staff-card .staff-card-img .overlay {
   position: absolute;
@@ -474,8 +472,7 @@ footer .link-footer {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .modal-body-container .modal-info {
   display: flex;
@@ -515,8 +512,7 @@ hr {
 .practice-area .practice-area-card .practice-area-img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .practice-area .practice-area-card .practice-area-text {
   padding: 2rem;
@@ -564,8 +560,7 @@ hr {
   border-radius: 50%;
   width: 80px;
   height: 80px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .items-practicearea-container .items-practicearea-contact .items-practicearea-staff .items-practicearea-text p {
   line-height: 0.6rem;
@@ -578,8 +573,7 @@ hr {
 .review-img-container img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .contacto {
@@ -592,9 +586,8 @@ hr {
   }
 }
 .contacto .contacto-bg {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.jpg);
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../assets/images/palacio-justicia.webp);
+  object-fit: cover;
   background-position: center;
   display: flex;
   justify-content: center;
@@ -610,7 +603,7 @@ hr {
   margin-bottom: 2rem;
 }
 .contacto .contacto-bg ul li span {
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 .contacto .contacto-bg ul li span a {
   color: #ffffff;
@@ -753,4 +746,4 @@ form #enviar:hover {
 
 .text {
   padding-left: 2rem;
-}
+}/*# sourceMappingURL=main.css.map */

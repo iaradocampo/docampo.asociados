@@ -19,7 +19,7 @@
 }
 
 .servicies{
-    background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../assets/images/palacio-justicia-interior.jpg);
+    background-image: linear-gradient(rgba(13, 22, 31, 0.9), rgba(13, 22, 31, 0.9)), url(../assets/images/palacio-justicia-interior.webp);
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -89,15 +89,15 @@
 
 //HERO
 .hero {
-    @include background(url("../assets/images/palacio-justicia.jpg"));
-    &--areas-practica{
-        @include background(url("../assets/images/palacio-justicia-interior.jpg"));
-    }
-    &--equipo{
-        @include background(url("../assets/images/palacio-justicia-2.jpg"));
-    }
+    @include background(url("../assets/images/palacio-justicia.webp"));
     @include query(small){
         background-attachment: initial;
+    }
+    &--areas-practica{
+        @include background(url("../assets/images/palacio-justicia-interior.webp"));
+        @include query(small){
+            background-attachment: initial;
+        }
     }
     &__container {
         display: flex;
